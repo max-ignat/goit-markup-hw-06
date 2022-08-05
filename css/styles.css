@@ -903,6 +903,7 @@ activities {
     transition: transform 1000ms;
 }
 .modal {
+    padding: 40px;
     width: 528px;
     min-height: 581px;
     background-color: #FFFFFF;
@@ -928,7 +929,7 @@ activities {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: color;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -940,13 +941,21 @@ activities {
 }
 
 .modal-title{
+    
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 40px 12px;
+    color: var(--primary-head-text);
+
+    
+    
+    margin-bottom: 12px;
 }
+
+
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -955,7 +964,7 @@ activities {
 .modal-field {
    display: flex;
    flex-direction: column;
-   margin: 10px 40px 10px 40px;
+   margin-bottom: 10px ;
    
 }
 .modal-field input {
@@ -986,29 +995,16 @@ activities {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    outline: none;
 }
 .modal-textarea {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-     margin-left: 40px;
-    margin-right: 40px;
+    
     
 }
-.modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-head-text);
 
-    
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 12px;
-}
 .modal-checkbox {    
     display: flex;    
     justify-content: center;
@@ -1103,7 +1099,7 @@ activities {
 .footer-right {
     
     margin-left: 93px;
-    width: 570px;
+    width: auto;
 }
 .subscribe-form {
     display: flex;
@@ -1151,7 +1147,7 @@ activities {
     color: #ffffff;
     height: 50px;
     /* outline-color: var(--secondary-text); */
-    width: 100%;
+    width: 358px;
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);

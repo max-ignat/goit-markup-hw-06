@@ -405,8 +405,8 @@
                 </div>
                 <div class="footer-right">
                     <p class="subscribe-title">подпишитесь на рассылку</p>
-                    <form class="subscribe-form">
-                        <input  type="email" name="email" class="subscribe-input" placeholder="E-mail">
+                    <form class="subscribe-form" >
+                        <input  type="email" name="email" class="subscribe-input" placeholder="E-mail" required>
                         <button type="submit" class="subscribe-button">Подписаться 
                             <svg class="subscribe-icon">
                             <use href="./images/symbol-defs.svg#icon-icon-send"></use>
@@ -428,7 +428,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close >
-                <svg class="modal-close-icon" width="18px" height="18px">
+                <svg class="modal-close-icon" width="12px" height="12px">
                     <use href="./images/sprite-svg.svg#icon-close">
                 </svg>
             </button>
@@ -437,7 +437,7 @@
                 <div class="modal-field">
                     <label for="name" class="modal-label">Имя</label>
                     <div class="modal-input-wrap">
-                        <input class="modal-input" type="text" name="name" id="name">
+                        <input class="modal-input" type="text" name="name" id="name" required>
                         <svg class="modal-icon" height="14px" width="14px">
                             <use href="./images/symbol-defs.svg#icon-person"></use>
                         </svg>
@@ -446,7 +446,7 @@
                 <div class="modal-field">
                     <label for="tel" class="modal-label">Телефон</label>
                     <div class="modal-input-wrap">
-                        <input class="modal-input" type="tel" name="tel" id="tel">
+                        <input class="modal-input" type="tel" name="tel" id="tel" required>
                         <svg class="modal-icon" height="18px" width="18px">
                             <use href="./images/symbol-defs.svg#icon-phone-black"></use>
                         </svg>
@@ -456,7 +456,7 @@
                 <div class="modal-field">
                     <label for="email" class="modal-label">Почта</label>
                     <div class="modal-input-wrap">
-                        <input class="modal-input" type="email" name="email" id="email">
+                        <input class="modal-input" type="email" name="email" id="email" required>
                         <svg class="modal-icon" height="18px" width="18px">
                             <use href="./images/symbol-defs.svg#icon-email-black" ></use>
                         </svg>
@@ -465,7 +465,7 @@
 
                 <div class="modal-textarea">
                     <label for="comment" class="modal-label">Комментарий</label>
-                    <textarea class="modal-textarea-input modal-input" name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
+                    <textarea class="modal-textarea-input modal-input" name="comment" id="comment"  rows="10" placeholder="Введите текст" required></textarea>
                 </div>
                 <div class="modal-checkbox">
                     <input 
